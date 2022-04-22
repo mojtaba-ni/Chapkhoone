@@ -1,0 +1,27 @@
+.InfoLContainer{
+    padding: 0 1rem;
+    direction: rtl;
+    .InfoLand{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .InfoLi{
+            padding: 0 1rem;
+            .imgR{
+                width: 100%;
+            }
+            .imgG{
+                transform: translateY(-16px);
+                width: 100%;
+            }
+        }
+    }
+}
+// ! mediaQuery // 
+@media screen  and (max-width: 1100px){
+    .InfoLContainer{
+        .InfoLand{
+            flex-wrap: wrap;
+        }
+    }
+} 
