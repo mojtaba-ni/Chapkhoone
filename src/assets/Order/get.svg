@@ -1,0 +1,12 @@
+<svg id="Component_27_1" data-name="Component 27 – 1" xmlns="http://www.w3.org/2000/svg" width="132" height="132" viewBox="0 0 132 132">
+  <g id="Group_97" data-name="Group 97" transform="translate(0.463)">
+    <circle id="Ellipse_53" data-name="Ellipse 53" cx="66" cy="66" r="66" transform="translate(-0.463)" fill="#929292"/>
+    <path id="Path_444" data-name="Path 444" d="M237.368,74.466l-31.619-21.7L178.1,94.105l-37.315,4.136,40.83,34.344c12.778.54,26.682-8.243,36.438-18C227.878,104.759,237.986,87.333,237.368,74.466Z" transform="translate(-107.477 -3.591)" fill="#7a7a7a"/>
+    <g id="buy-svgrepo-com" transform="translate(22.683 22.21)">
+      <rect id="Rectangle_153" data-name="Rectangle 153" width="84.787" height="84.787" fill="rgba(255,255,255,0.01)"/>
+      <path id="Path_440" data-name="Path 440" d="M6,15H69.789L66.245,62.842H9.544Z" transform="translate(5.485 12.433)" fill="#00b33c" stroke="#f1b14f" stroke-linejoin="round" stroke-width="4" fill-rule="evenodd"/>
+      <path id="Path_441" data-name="Path 441" d="M16,29.035V6H44.351V29.035" transform="translate(13.205 5.485)" fill="none" stroke="#ed9e24" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      <path id="Path_442" data-name="Path 442" d="M16,34H44.351" transform="translate(13.205 27.099)" fill="none" stroke="#04772b" stroke-linecap="round" stroke-width="4"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,43 @@
+.orderContainer{
+    padding: 2rem 0;
+    .orderWrapper{
+        padding: 1rem 2rem ;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        place-items: center;
+        direction: rtl;
+        .orderLi{
+            img{
+                width: 90%;
+            }
+            p{
+                text-align: center;
+                font-size: 1.1rem;
+                color: #D9442F;
+                font-weight: 600;
+            }
+        }
+    }
+}
+@media screen and(max-width: 1200px) {
+    .orderContainer{
+        .orderWrapper{
+            grid-template-columns: 1fr 1fr 1fr ;
+            place-items: center;
+        }
+        .orderLi{
+            padding: 1rem 0;
+        }
+    }
+}
+@media screen and(max-width: 640px) {
+    .orderContainer{
+        .orderWrapper{
+            grid-template-columns: 1fr ;
+            place-items: center;
+        }
+        .orderLi{
+            padding: 1rem 0;
+        }
+    }
+}
