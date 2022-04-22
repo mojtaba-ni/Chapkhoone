@@ -1,0 +1,35 @@
+.offContainer{
+    padding-bottom: 3rem;
+    .offBox{
+        position: relative;
+        .offImg{
+            width: 100%;
+            height: 500px;
+        }
+        .offWrapper{
+            position: absolute;
+            top: 20px;
+            right: 0;
+            .offBody{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 1rem;
+                .bodyLi{
+                    padding: 0 1rem;
+                }
+            }
+            .offSubject{
+                display: flex;
+                padding-top: 1rem;
+                padding-bottom: 2.4rem;
+                padding-right: 3rem;
+                direction: rtl;
+                align-items: center;
+                .subjectLi{
+                    padding: 0 2rem;
+                }
+            }
+        }
+    }
+}
