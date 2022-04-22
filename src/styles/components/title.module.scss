@@ -1,0 +1,22 @@
+.titleContainer{
+    padding: 1rem 4rem;
+    padding-top: 3rem;
+    .titleBox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .line{
+            img{
+                width: 100%;
+            }
+        }
+        .titleMain{
+           transform: translateX(10px);
+           padding: 0 1rem;
+            img{
+                width: 100%;
+                
+            }
+        }
+    }
+}
