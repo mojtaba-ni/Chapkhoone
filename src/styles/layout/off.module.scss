@@ -32,4 +32,52 @@
             }
         }
     }
+    .offMobile{
+        display: none;
+    }
+}
+@media screen and(max-width: 770px){
+    .offContainer{
+        .offBox{
+            display: none;
+        }
+        .offMobile{
+            display: block;
+            background: rgb(113,107,108);
+            background: linear-gradient(90deg, rgba(113,107,108,1) 7%, rgba(34,33,33,1) 100%);
+            width: 100%;
+            .offMobileWrapper{
+                padding: 1rem;
+                .offHeader{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .headerLi{
+                        width: 180px;
+                        padding: 1rem;
+                    }
+                }
+                .offBody{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 1.5rem;
+                    
+                }
+            }
+        }
+    }
+}
+@media screen and(max-width: 410px){
+    .offMobile{
+        .offMobileWrapper{
+            .offHeader{
+                padding: 1rem 0;
+                .headerLi{
+                    padding:  0 .2rem !important;
+                }
+            }
+        }
+    }
 }
