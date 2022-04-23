@@ -3,15 +3,16 @@ import Paper from '@material-ui/core/Paper';
 import product1Icon from '../../assets/Product/product1.png'
 import styles from '../../styles/components/card.module.scss'
 
-export default () => {
+export default ({img,title}) => {
+  const width = window.outerWidth
   return (
-    <Paper className={styles.cardContainer}>
+    <Paper className={`${styles.cardContainer} ${`width:${width}`}`}>
         <div className={styles.cardBox}>
             <div className={styles.cardImg}>
-                <img src={product1Icon} alt="product" />
+                <img src={img} alt="product" />
             </div>
             <div className={styles.cardDesc}>
-                <h4>لمینت براق</h4>
+                <h4>{title}</h4>
             </div>
         </div>
     </Paper>

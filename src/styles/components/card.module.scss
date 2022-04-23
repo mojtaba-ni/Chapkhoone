@@ -1,6 +1,7 @@
 .cardContainer{
     border-radius: 20px !important;
     height: 320px;
+
     .cardBox{
         display: flex;
         flex-direction: column;
@@ -37,7 +38,7 @@
     height: 100%;
     text-align: center;
     width: 100%;
-    
+    cursor: pointer;
     p{
         margin: 0;
         display: flex;
@@ -45,5 +46,11 @@
         padding: .8rem 2.3rem;
         font-weight: 600;
         color: #464646;
+    }
+}
+.subjectContainer:hover{
+    background-color: #FF4329;
+    p{
+        color: #fff;
     }
 }
