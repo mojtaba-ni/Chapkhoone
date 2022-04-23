@@ -1,0 +1,64 @@
+.navsideContainer{
+    padding: 0 3rem;
+    nav{
+        padding: .2rem 1rem;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        direction: rtl;
+        .navsideLi{
+            list-style: none;
+            padding: 0 2rem;
+
+            .liDesc{
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    position: absolute;
+                    display: none;
+                }
+                h3{
+                    position: relative;
+                    display: flex;
+                    color: #6b6565;
+                    font-weight: 500;
+                    margin: 0.4rem;
+                }
+               h3::before{
+                margin-left: .5rem;
+                width: 28px;
+                height: 28px;
+                display: grid;
+                place-items: center;
+                background:url('../../assets//alarm.png');
+                  
+
+               }
+            }
+            .liDesc:hover{
+                h3::before{
+                    position: absolute;
+                    right: -32px;
+                    width: 28px;
+                    height: 28px;
+                    display: grid;
+                    place-items: center;
+                    background:url('../../assets//alarm.png');
+                    content: '';   
+                }
+                h3{
+                    color: #00B33C;
+                    font-weight: 500;
+                }
+            }
+        
+        }
+    }
+}
+@media screen and(max-width: 980px){
+    .navsideContainer{
+        display: none;
+    }
+}

@@ -20,3 +20,21 @@
         }
     }
 }
+@media screen and(max-width: 800px){
+    .titleContainer{
+        padding: 1rem;
+        .titleBox{
+            .line{   
+                img{
+                    width: 100%;
+                    height: 2px;
+                }
+            }
+            .titleMain{
+                 img{
+                     width: 310px;
+                 }
+             }
+        }
+    }
+}

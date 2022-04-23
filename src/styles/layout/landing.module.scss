@@ -1,0 +1,99 @@
+.landingContainer{
+    .landingWrapper{
+        padding: 0.3rem 0rem;
+        position: relative;
+        .landingPic{
+            width: 100%;
+            background-size: cover;
+        }
+        .LandingDetail{
+            .detailImg{
+                
+                img{
+                    position: absolute;
+                    top: 5px;
+                    right: 100px;
+                    width: 410px
+                }
+            }
+            .detailTitle{
+                position: absolute;
+                top: 50px;
+                left:47px;
+                img{
+                    width: 687px;
+                    height: 118px;
+                }
+            }
+        }
+    }
+    .landingMobile{
+        display: none;
+    }
+}
+@media screen and(max-width: 1150px){
+    .landingWrapper{
+        display: none;
+    }
+    .landingMobile{
+        display: block !important;
+        background-color: rgb(191,21,59);
+        background: linear-gradient(90deg, rgba(191,21,59,1) 7%, rgba(254,21,65,1) 98%);
+        width: 100%;
+        height: 600px;
+        padding-bottom: 3rem;
+        .landingMobileWrapper{
+            display: grid;
+            grid-template-columns: 1fr;
+            place-items: center;
+            .landingHeader{
+                padding: 2rem ;
+                img{
+                    width: 100%;
+                }
+            }
+            .landingBody{
+               
+                img{
+                    width: 440px;
+                }
+            }
+        }
+    }
+}
+@media screen and(max-width: 500px){
+    .landingMobile{
+        height: 500px;
+        .landingMobileWrapper{
+            .landingHeader{
+                padding: 1rem;
+            }
+            .landingBody{        
+                display: flex;
+                justify-content: center;
+                align-items: center;  
+                img{
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
+@media screen and(max-width: 390px){
+    .landingMobile{
+        height: 400px;
+        .landingMobileWrapper{
+            .landingHeader{
+                padding: .2rem;
+            }
+            .landingBody{        
+                display: flex;
+                justify-content: center;
+                align-items: center;  
+                img{
+                    width: 90%;
+                }
+            }
+        }
+    }
+}

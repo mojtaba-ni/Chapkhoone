@@ -1,0 +1,280 @@
+.navbarContainer{
+    width: 100%;
+    .navbarBox{
+       padding-top: .7rem;
+       padding-bottom: .2rem;
+       display: flex;
+       justify-content: space-evenly;
+       direction: rtl;
+       border-bottom: 2px solid gray;
+        .navbarIcons{
+            display: flex;
+                justify-content: center;
+                align-items: center;
+            .imgWrapper{
+                padding: 0 1rem;
+                img{
+                    width: 55px;
+                    height: 55px;
+                }
+            }
+            .iconWrapper{
+                padding: 0 .5rem;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    border-radius: 8px;
+                    background-color: #fff;
+                    padding: .3rem .6rem;
+                    width: 28px;
+                    height: 28px;
+                }
+            }
+            .iconWrapperShop{
+                padding: 0 .5rem;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                svg{
+                    border-radius: 8px;
+                    background-color: #fff;
+                    padding: .3rem .6rem;
+                    width: 28px;
+                    height: 28px;
+                    color: #00B33C
+                }
+            }
+            .iconWrapperM,.iconWrapperSearch{
+                padding: 0 .5rem;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                display: none;
+                img{
+                    border-radius: 8px;
+                    background-color: #fff;
+                    padding: .3rem .6rem;
+                    width: 28px;
+                    height: 28px;
+                    color: #00B33C;
+                }
+                svg{
+                    border-radius: 8px;
+                    background-color: #fff;
+                    padding: .3rem .6rem;
+                    width: 28px;
+                    height: 28px;
+                    color: #00B33C;
+                }
+            }
+            .iconWrapperM:hover ,.iconWrapperShop:hover , .iconWrapperSearch:hover{
+                img{
+                    background-color: #00B33C;
+                    color: #fff !important;
+                }
+                svg{
+                    border-radius: 8px;
+                    background-color: #00B33C;
+                    padding: .3rem .6rem;
+                    width: 28px;
+                    height: 28px;
+                    color: #fff !important;
+                }
+            }
+        }
+        .navbarSign{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .signWrapper{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #fff;
+                padding: 0 1rem;
+                border-radius: 12px;
+                img{
+                    width: 21px;
+                    height: 21px;
+                }
+                .signTitle{
+                    padding-right: .2rem;
+                    p{
+                        color: #00B33C;
+                        font-weight: 600;
+                        font-size: .9rem;
+                    }
+                }
+            }
+            
+        }
+        .navbarSearch{
+            padding-top: .8rem;
+            .searchBox{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                
+                input{
+                    width: 360px;
+                    height: 38px;
+                    direction: rtl;
+                    padding-right: .7rem;
+                    border: none;
+                    border-radius: 8px;
+                    
+                }
+                .searchIconBg{
+                    position: absolute;
+                    left: 0;
+                    background-color: #00B33C;
+                    height: 100%;
+                    border-radius: 11px;
+                    img{
+                        width: 25px;
+                        height: 25px;
+                        padding: .5rem .8rem;
+                    }
+                }
+            }
+        }
+        .logoWrapper{
+            display: flex;
+            direction: rtl;
+            justify-content: center;
+            align-items: center;
+
+            .imgWrapper{
+                cursor: pointer;
+                img{
+                    width: 70px;
+                    height: 70px;
+                }
+            }
+            .imgMenu{
+                transition: 0.2s ease-in-out;
+                cursor: pointer;
+                padding: 0 .8rem;
+                display: none;
+                
+                img{
+                    width: 55px;
+                    height: 55px;
+                }
+                
+            }
+            .imgMenu:hover{
+                transform: scale(1.1);
+            }
+            .desc{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                h4{
+                    margin: 0;
+                    font-size: 1.2rem;
+                    letter-spacing: 1px;
+                    color: #00B33C;
+                    font-weight: 600;
+                }
+                p{
+                    transform: translateY(-6px);
+                    padding-right: .3rem;
+                    color: #00B33C
+                }
+            }
+        }
+    }
+}
+@media screen and(max-width: 1150px){
+    .navbarContainer{
+        .navbarBox{
+            justify-content: space-between;
+            padding-top: .6rem;
+            padding-bottom: .2rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            .navbarIcons{
+                .imgWrapper{
+                    display: none ;
+                }
+                .iconWrapperM{
+                    display: block;
+                }
+            }
+            .navbarSign{
+                display: none;
+            }
+            .logoWrapper{
+                .imgWrapper{
+                    display:block;
+                }
+                .desc{
+                    display: block;
+                }
+            }
+            .navbarSearch{
+                
+            }
+        }
+    }
+}
+@media screen and(max-width: 980px){
+    .navbarContainer{
+        .navbarBox{
+            .logoWrapper{
+                .imgMenu{
+                    display: block;
+                }
+            }
+            .navbarSearch{
+                display: none;
+            }
+            .navbarIcons{
+                .iconWrapperSearch{
+                    display: block;
+                }
+            }
+        
+        }
+    }
+}
+@media screen and(max-width: 600px){
+    .navbarContainer{
+        .navbarBox{
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}
+@media screen and(max-width: 540px){
+    .navbarContainer{
+        .navbarBox{
+            padding-left: 0;
+            padding-right: 0;
+
+            .navbarIcons{
+                .imgWrapper{
+                    display: block ;
+                }
+            }
+            .navbarLogoM{
+                .logoWrapper{
+                    .imgWrapper{
+                        display:none;
+                    }
+                    .desc{
+                        display: none !important;
+                    }
+                }
+            }
+        }
+    }
+}
