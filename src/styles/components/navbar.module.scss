@@ -13,6 +13,7 @@
                 align-items: center;
             .imgWrapper{
                 padding: 0 1rem;
+                display: none;
                 img{
                     width: 55px;
                     height: 55px;
@@ -90,23 +91,43 @@
             display: flex;
             justify-content: center;
             align-items: center;
+   
             .signWrapper{
+                height: 47px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 background-color: #fff;
                 padding: 0 1rem;
                 border-radius: 12px;
+                cursor: pointer;
                 img{
                     width: 21px;
                     height: 21px;
+                }
+                svg{
+                    color: #00B33C;
                 }
                 .signTitle{
                     padding-right: .2rem;
                     p{
                         color: #00B33C;
                         font-weight: 600;
-                        font-size: .9rem;
+                        font-size: 1rem;
+                    }
+                }
+            }
+            .signWrapper:hover{
+                background-color: #00B33C;
+                svg{
+                    color: #fff !important;
+                }
+                .signTitle{
+                    padding-right: .2rem;
+                    p{
+                        color: #fff !important;
+                        font-weight: 600;
+                        font-size: 1rem;
                     }
                 }
             }
@@ -159,7 +180,7 @@
             .imgMenu{
                 transition: 0.2s ease-in-out;
                 cursor: pointer;
-                padding: 0 .8rem;
+                padding: 0 .4rem;
                 display: none;
                 
                 img{
@@ -175,9 +196,9 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                align-items: center;
-
+                transform: translateX(-5px);
                 h4{
+                    transform: translateY(10px);
                     margin: 0;
                     font-size: 1.2rem;
                     letter-spacing: 1px;
@@ -207,6 +228,7 @@
                 }
                 .iconWrapperM{
                     display: block;
+                    transform: translateY(5px);
                 }
             }
             .navbarSign{
@@ -232,6 +254,7 @@
             .logoWrapper{
                 .imgMenu{
                     display: block;
+                    
                 }
             }
             .navbarSearch{
@@ -240,6 +263,7 @@
             .navbarIcons{
                 .iconWrapperSearch{
                     display: block;
+                    transform: translateY(5px);
                 }
             }
         
@@ -263,12 +287,16 @@
             .navbarIcons{
                 .imgWrapper{
                     display: block ;
+                    transform: translateY(5px);
                 }
             }
             .navbarLogoM{
                 .logoWrapper{
                     .imgWrapper{
                         display:none;
+                    }
+                    .imgMenu{
+                        padding: 0;
                     }
                     .desc{
                         display: none !important;
