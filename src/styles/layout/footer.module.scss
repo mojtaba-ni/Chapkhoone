@@ -1,12 +1,15 @@
 .footerFound{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left:3rem;
     .footerContainer{
-        background: transparent url('../../assets/Landing/LandFooter.png') 0% 0% no-repeat padding-box;
+        background: transparent url('../../assets/Landing/LandFooter.svg') 0% 0% no-repeat padding-box;
         width: 100%;
-        
-        
         p{
             padding: 0.3rem 0;
         }
+        padding: 0 2rem;
         .footerBox{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
@@ -27,7 +30,9 @@
                     }
                 }
                 p{
-                    line-height: 1.8rem;
+                    line-height: 1.9rem;
+                    cursor: pointer;
+                    
                 }
             }
         }
@@ -60,17 +65,37 @@
 //! Media Query //
 @media screen and (max-width: 1000px) {
    .footerFound{
+    padding-left:0;
     .footerContainer{
-       
         .footerBox{
+            padding-top: 0;
             display: grid;
             grid-template-columns: 1fr;
 
             .footerLi{
-                padding: 1rem;
+                padding: .4rem;
                 
             }
         }
     }
    }
+}
+@media screen and (max-width: 520px) {
+    .footerFound{
+        .footerContainer{
+            .footerBox{
+                padding-top: 0;
+                display: grid;
+                grid-template-columns: 1fr;
+    
+                .footerLi{
+                    padding: .4rem;
+                    .footerLii{
+                        display: none;
+                    }
+                    
+                }
+            }
+        }
+    }
 }

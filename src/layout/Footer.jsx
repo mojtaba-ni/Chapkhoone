@@ -1,12 +1,15 @@
 import React from 'react'
 import alert from '../assets/alert.png'
+import {motion} from 'framer-motion'
+import { landImg } from '../utils/Animation'
 import styles from  '../styles/layout/footer.module.scss'
 
 export default () => {
   return (
     <div className={styles.footerFound}>
         <div className={styles.footerContainer}>
-          <div className={styles.footerBox}>
+          <motion.div className={styles.footerBox}
+          variants={landImg} initial="hidden" whileInView="visible" viewport={{once:true}}>
               <div className={styles.footerLi}>
                   <div className={styles.LiHead}>
                     <img src={alert} alt="" />
@@ -23,33 +26,23 @@ export default () => {
                   </div>
                   <div className={styles.comunicaateContainer}>
                       <p>آدرس:تهران-خیابان-</p>
-                      <p>ایمیل www.onlineshop.com</p>
+                      <p>ایمیل www.Chapkhoone.com</p>
                       <p>شماره: 021-3253284</p>
                   </div>
               </div>
               <div className={styles.footerLi}>
-                  <div className={styles.LiHead}>
-                    <img src={alert} alt="" />
-                    <h3>خدمات مشتریان</h3>
-                  </div>
-                  <p>پرسش های متداول</p>
-                  <p>رویه های بازگرداندن کالا</p>
-                  <p>تماس با ما</p>
+                  <div className={styles.footerLii}>
+                    <div className={styles.LiHead}>
+                      <img src={alert} alt="" />
+                      <h3>خدمات مشتریان</h3>
+                    </div>
+                    <p>پرسش های متداول</p>
+                    <p>رویه های بازگرداندن کالا</p>
+                    <p>تماس با ما</p>
                   <p>درباره ما</p>
+                  </div>
               </div>
-          </div>
-          <div className={styles.contactBox}>
-              <div className={styles.contactLi}>
-                  ww
-              </div>
-              <div className={styles.contactLi}>
-                ss
-              </div>
-              <div className={styles.contactLi}>
-                  aa
-              </div>
-          </div>
-        
+          </motion.div>
       </div>
     </div>
   )
