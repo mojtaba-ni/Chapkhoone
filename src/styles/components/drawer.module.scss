@@ -7,11 +7,45 @@
         padding: 1.4rem 0;
         .drawerListText{
             text-align: start;
+            font-size: 1.2rem !important;
+            font-weight: 700 !important;
+            
         }
         .drawerListIcon{
             justify-content: center;
             align-items: center;
+            width: 100px;
             
         }
+    }
+    .drawerListItem:hover{
+        .drawerListText,.drawerListIcon{
+            color: #00B33C;
+        }
+    }
+}
+.drawer{
+    display:block;
+}
+@media screen and (min-width: 1000px){
+    .drawerList{
+        direction: rtl;
+        background-color: "#EFEFEF";
+        position: absolute;
+        top: 20px;
+        .drawerListItem{
+            padding: 1.4rem 0;
+            .drawerListText{
+                text-align: start;
+            }
+            .drawerListIcon{
+                justify-content: center;
+                align-items: center;
+                
+            }
+        }
+    }
+    .drawer{
+        display: none;
     }
 }

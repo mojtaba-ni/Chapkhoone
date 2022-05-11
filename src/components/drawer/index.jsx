@@ -67,7 +67,7 @@ export default function TemporaryDrawer({menu}) {
           </ListItem>
         ))}
       </List>
-      <Divider/>
+     
      
     </div>
   );
@@ -81,6 +81,7 @@ export default function TemporaryDrawer({menu}) {
             anchor={anchor}
             open={state[anchor]}
             onClose={toggleDrawer(anchor, false)}
+            className={styles.drawer}
           >
             {list(anchor)}
           </Drawer>
