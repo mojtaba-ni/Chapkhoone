@@ -3,11 +3,14 @@ import info1 from '../../assets/info/info1.svg'
 import info2 from '../../assets/info/info2.svg'
 import info3 from '../../assets/info/info3.svg'
 import info4 from '../../assets/info/info4.svg'
+import {motion} from 'framer-motion'
+import { InfoAnim} from '../../utils/Animation'
 import styles from '..//../styles/components/info.module.scss'
 
 export default () => {
   return (
-    <div className={styles.infoContainer}>
+    <motion.div className={styles.infoContainer} 
+     variants={InfoAnim} initial="hidden" animate="visible">
         <div className={styles.infoLi}>
             <img src={info1} alt="" />
             <div className={styles.infoDesc}>
@@ -36,7 +39,7 @@ export default () => {
                 <p>محصولات تولید کارخانه</p>
             </div>
         </div>
-    </div>
+    </motion.div>
   )
 }
 
