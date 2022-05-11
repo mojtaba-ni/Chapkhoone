@@ -1,4 +1,7 @@
 import MailIcon from "@material-ui/icons/Mail";
+import PaymentIcon from '@material-ui/icons/Payment';
+import StorefrontOutlinedIcon from '@material-ui/icons/StorefrontOutlined';
+import AccountBalanceOutlinedIcon from '@material-ui/icons/AccountBalanceOutlined';
 import PhoneEnabledRoundedIcon from '@material-ui/icons/PhoneEnabledRounded';
 
 export const sidebar = [
@@ -10,17 +13,17 @@ export const sidebar = [
     {   
         id:1,
         name:'محصولات',
-        icon: <MailIcon />,
+        icon: <StorefrontOutlinedIcon />,
     },
     {   
         id:2,
         name:'لیست قیمت',
-        icon: <MailIcon />,
+        icon: <PaymentIcon/>,
     },
     {   
         id:3,
         name:'قالب ها',
-        icon: <MailIcon />,
+        icon: <AccountBalanceOutlinedIcon/>,
     },
     {   
         id:4,
