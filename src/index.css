@@ -1,11 +1,25 @@
+@font-face {
+  font-family: "YekanBalkh";
+  src: local("YekanBalkh"),
+   url('./utils/YekanBakh-Bold.ttf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Alfont";
+  src: local("YekanBalkh"),
+   url('./utils/alfont_com_AlFont_com_Yekan-Bakh-EN-04-Regular.ttf');
+  
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: YekanBalkh, Alfont, 
+
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #EFEFEF;
+  overflow-x: hidden;
+
 }
 
 code {
