@@ -1,0 +1,12 @@
+<svg id="Component_35_1" data-name="Component 35 – 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="971" height="166" viewBox="0 0 971 166">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.082" y1="1.632" x2="0.851" y2="-0.183" gradientUnits="objectBoundingBox">
+      <stop offset="0"/>
+      <stop offset="1" stop-color="#5a5a5a"/>
+    </linearGradient>
+  </defs>
+  <g id="Component_36_1" data-name="Component 36 – 1">
+    <path id="Path_456" data-name="Path 456" d="M30,0H941a30,30,0,0,1,30,30V136a30,30,0,0,1-30,30H30A30,30,0,0,1,0,136V30A30,30,0,0,1,30,0Z" opacity="0.44" fill="url(#linear-gradient)"/>
+    <text id="_...لذت_یک_چاپ_بی_دردسر" data-name="...لذت یک چاپ بی دردسر" transform="translate(27 110)" fill="#fff" font-size="100" font-family="AMosalas-Bold, A Mosalas" font-weight="700"><tspan x="0" y="0">...</tspan><tspan y="0">لذت یک چاپ بی دردسر</tspan></text>
+  </g>
+</svg>
