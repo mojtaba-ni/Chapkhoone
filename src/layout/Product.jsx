@@ -1,13 +1,15 @@
 import React from 'react'
-import Card from '../components/card'
 import Sliider from '../components/sliderCenterMode'
+import {motion} from 'framer-motion'
+import { NavsideAnim } from '../utils/Animation'
 import styles from '../styles/layout/product.module.scss'
 
 const Product = () => {
   return (
-    <div className={styles.productContainer}>
+    <motion.div className={styles.productContainer}
+    variants={NavsideAnim} initial="hidden" whileInView="visible" viewport={{once:true}}>
       <Sliider/>
-    </div>
+    </motion.div>
   )
 }
 

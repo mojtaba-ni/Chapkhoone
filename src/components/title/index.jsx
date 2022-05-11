@@ -1,10 +1,13 @@
 import React from 'react'
+import {motion} from 'framer-motion'
+import { UpAnim} from '../../utils/Animation'
 import styles from '../../styles/components/title.module.scss'
 
 export default({line,Main}) => {
   return (
     <div className={styles.titleContainer}>
-        <div className={styles.titleBox}>
+        <motion.div className={styles.titleBox}
+        variants={UpAnim} initial="hidden" whileInView="visible" >
             <div className={styles.line}>
                 <img src={line} alt="line" />
             </div>
@@ -14,7 +17,7 @@ export default({line,Main}) => {
             <div className={styles.line}>
                 <img src={line} alt="line" />
             </div>
-        </div>
+        </motion.div>
     </div>
   )
 }
