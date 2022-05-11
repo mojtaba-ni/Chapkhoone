@@ -6,6 +6,8 @@ import { Subject } from '../components/card'
 import product1 from '../assets/Product/product1.png'
 import product2 from '../assets/Product/product2.png'
 import product3 from '../assets/Product/product3.png'
+import {motion} from 'framer-motion'
+import { landImg,UpAnim } from '../utils/Animation'
 import styles from '../styles/layout/off.module.scss'
 
 export default () => {
@@ -15,7 +17,8 @@ export default () => {
     <div className={styles.offContainer}>
         <div className={styles.offBox}>
             <img className={styles.offImg} src={OffLand} alt="" />
-            <div className={styles.offWrapper}>
+            <motion.div className={styles.offWrapper}
+            variants={landImg} initial="hidden" whileInView="visible" viewport={{once:true}}>
                 <div className={styles.offSubject}>
                   <div className={styles.subjectLi}>
                     <Subject title={"پاکت نامه"}/>  
@@ -38,19 +41,20 @@ export default () => {
                     <Card img={product3} title={"لمینت مات"} />
                   </div>
                 </div>
-            </div>
+            </motion.div>
         </div>
         <div className={styles.offMobile}>
-            <div className={styles.offMobileWrapper}>
+            <motion.div className={styles.offMobileWrapper}
+            variants={UpAnim } initial="hidden" animate="visible">
               <div className={styles.offHeader}>
                 <div className={styles.headerLi}>
-                  <Subject className={`width:${width}`} title={'پاکت نانه'} />
+                  <Subject className={`width:${width}`} title={'پاکت نامه'} />
                 </div>
                 <div className={styles.headerLi}>
-                  <Subject className={`width:${width}`} title={'پاکت نانه'}/>
+                  <Subject className={`width:${width}`} title={'کارت ویزیت'}/>
                 </div>
                 <div className={styles.headerLi}>
-                  <Subject className={`width:${width}`} title={'پاکت نانه'}/>
+                  <Subject className={`width:${width}`} title={'پاکت نامه'}/>
                 </div>
               </div>
               <div className={styles.offBody}>
@@ -64,7 +68,7 @@ export default () => {
                     <Card img={product3} title={"لمینت مات"} />
                   </div>
               </div>
-            </div>
+            </motion.div>
         </div>
     </div>
   )
